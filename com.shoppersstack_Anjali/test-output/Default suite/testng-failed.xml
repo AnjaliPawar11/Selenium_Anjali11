@@ -8,8 +8,8 @@
           <include name="aftermethod"/>
           <include name="beforesuite"/>
           <include name="addAddress"/>
-          <include name="beforeclass"/>
           <include name="aftersuite"/>
+          <include name="beforeclass"/>
           <include name="beforemethod"/>
           <include name="beforetest"/>
           <include name="afterclass"/>

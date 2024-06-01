@@ -12,7 +12,7 @@ public class MyAddress_Page
 		PageFactory.initElements(driver, this);
 		
 	}
-	@FindBy(xpath ="//button[text()='Add Address']")
+	@FindBy(xpath="//button[text()='Add Address']")
 	private WebElement addaddressbtn;
 	public WebElement getaddaddressbtn() {
 		return addaddressbtn;

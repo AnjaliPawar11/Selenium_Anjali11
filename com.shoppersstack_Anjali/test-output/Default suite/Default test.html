@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 27 11:03:48 IST 2024</td>
+<td>Started on:</td><td>Sat Jun 01 13:05:07 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40188 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43381 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,16 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not.aftermethod()'><b>aftermethod</b><br>Test class: com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;BaseBadge-badge MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginBottomRight MuiBadge-anchorOriginBottomRightCircular MuiBadge-overlapCircular css-1mupj9l&quot;&gt;...&lt;/span&gt; is not clickable at point (1461, 46). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+<td title='com.ShoppersStack.testScripts.Verify_user_is_able_to_add_address_or_not_Test.addAddress()'><b>addAddress</b><br>Test class: com.ShoppersStack.testScripts.Verify_user_is_able_to_add_address_or_not_Test</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=125.0.6422.113)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4db98a92625f9f9cbd3bd4327c9cda62, clickElement {id=f.2201B80DB639298EA8CE3F3A7FF962AD.d.0BD32CE5723C6DC15D1109E5F2035098.e.76}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\ANSH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58948/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4db98a92625f9f9cbd3bd4327c9cda62)] -&gt; xpath: //span[contains(@class,&apos;BaseBadge-badge&apos;)]]
-Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
+Command: [dc00275400d43ef998f435c0e700a078, clickElement {id=f.698F65FBCBAC477F07380DB808828B19.d.288E64C1CB6135CA0E89BC929A0187FE.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ANSH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63108/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dc00275400d43ef998f435c0e700a078)] -&gt; xpath: //button[text()=&apos;Add Address&apos;]]
+Session ID: dc00275400d43ef998f435c0e700a078
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -102,16 +103,11 @@ Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.shoppersstack.GenericUtilities.Base_Test.aftermethod(Base_Test.java:105)
+	at com.ShoppersStack.testScripts.Verify_user_is_able_to_add_address_or_not_Test.addAddress(Verify_user_is_able_to_add_address_or_not_Test.java:23)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -134,16 +130,17 @@ Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace518167684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace518167684'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;BaseBadge-badge MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginBottomRight MuiBadge-anchorOriginBottomRightCircular MuiBadge-overlapCircular css-1mupj9l&quot;&gt;...&lt;/span&gt; is not clickable at point (1461, 46). Other element would receive the click: &lt;div&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1872088401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872088401'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=125.0.6422.113)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4db98a92625f9f9cbd3bd4327c9cda62, clickElement {id=f.2201B80DB639298EA8CE3F3A7FF962AD.d.0BD32CE5723C6DC15D1109E5F2035098.e.76}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: C:\Users\ANSH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58948/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4db98a92625f9f9cbd3bd4327c9cda62)] -&gt; xpath: //span[contains(@class,&apos;BaseBadge-badge&apos;)]]
-Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
+Command: [dc00275400d43ef998f435c0e700a078, clickElement {id=f.698F65FBCBAC477F07380DB808828B19.d.288E64C1CB6135CA0E89BC929A0187FE.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.113, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\ANSH\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63108/devtoo..., se:cdpVersion: 125.0.6422.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dc00275400d43ef998f435c0e700a078)] -&gt; xpath: //button[text()=&apos;Add Address&apos;]]
+Session ID: dc00275400d43ef998f435c0e700a078
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -160,16 +157,11 @@ Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at com.shoppersstack.GenericUtilities.Base_Test.aftermethod(Base_Test.java:105)
+	at com.ShoppersStack.testScripts.Verify_user_is_able_to_add_address_or_not_Test.addAddress(Verify_user_is_able_to_add_address_or_not_Test.java:23)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -193,36 +185,8 @@ Session ID: 4db98a92625f9f9cbd3bd4327c9cda62
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>1</td>
-<td>com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not@5542c4ed</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not.afterclass()'><b>afterclass</b><br>Test class: com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not</td>
-<td></td>
-<td>0</td>
-<td>com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not@5542c4ed</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not.modifyAddress()'><b>modifyAddress</b><br>Test class: com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not</td>
-<td></td>
-<td>24</td>
-<td>com.ShoppersStack.testScripts.Verify_user_is_able_to_modify_the_address_or_not@5542c4ed</td></tr>
+<td>2</td>
+<td>com.ShoppersStack.testScripts.Verify_user_is_able_to_add_address_or_not_Test@4c12331b</td></tr>
 </table><p>
 </body>
 </html>
