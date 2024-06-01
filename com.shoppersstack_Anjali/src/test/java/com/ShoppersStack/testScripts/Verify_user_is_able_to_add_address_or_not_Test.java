@@ -11,7 +11,7 @@ import com.shoppersstack.pom.MyProfile_Page;
 public class Verify_user_is_able_to_add_address_or_not_Test extends Base_Test
 {
 	@Test
-	public void addAddress() throws EncryptedDocumentException, IOException 
+	public void addAddress() throws EncryptedDocumentException, IOException, InterruptedException 
 	{
 		homepage.getAccountbtn().click();
 		homepage.getMyprofilebtn().click();
@@ -19,6 +19,7 @@ public class Verify_user_is_able_to_add_address_or_not_Test extends Base_Test
 		MyProfile_Page mypropage=new MyProfile_Page(driver);
 		mypropage.getMyaddressbtn().click();
 		
+		Thread.sleep(2000);
 		MyAddress_Page myaddress=new MyAddress_Page(driver);
 		myaddress.getaddaddressbtn().click();
 		
